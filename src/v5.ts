@@ -11,7 +11,7 @@ export const url = new Uint8Array([107, 167, 184, 17, 157, 173, 17, 209, 128, 18
  * uuid V5
  * [UUID RFC](https://www.rfc-editor.org/rfc/rfc4122)
  */
-export default async function v5(value: Uint8Array, namespace: Uint8Array): Promise<uuid> {
+export default async function v5(value: Uint8Array, namespace: Uint8Array) {
     const bytes = new Uint8Array(value.byteLength + namespace.byteLength);
     bytes.set(namespace);
     bytes.set(value, namespace.length);

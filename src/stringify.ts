@@ -1,3 +1,5 @@
+type uuid = `${string}-${string}-${string}-${string}-${string}`;
+
 const byteToHex: string[] = [];
 
 for (let i = 0; i < 256; ++i) {
