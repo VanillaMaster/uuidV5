@@ -1,0 +1,25 @@
+{
+    "name": "uuidv5",
+    "version": "1.0.0",
+    "private": true,
+    "description": "ESNext edition of uuidV5 from https://github.com/uuidjs/uuid",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/v5.js",
+            "types": "./dist/v5.d.ts"
+        }
+    },
+    "files": [
+        "src/**/*",
+        "tsconfig.json"
+    ],
+    "scripts": {
+        "build": "tsc -b",
+        "install": "npm run build"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^5.2.2"
+    }
+}
