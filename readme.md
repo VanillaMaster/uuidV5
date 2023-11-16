@@ -3,7 +3,7 @@ ESNext edition of uuidV5 from https://github.com/uuidjs/uuid
 
 ## requirements
 - [Secure contexts](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts)
-- [Compatible browser](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle#browser_compatibility)
+- [Compatible browser](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest#browser_compatibility)
 
 ## installation
 ```
