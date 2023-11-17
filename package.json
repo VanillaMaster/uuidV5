@@ -11,12 +11,11 @@
         }
     },
     "files": [
-        "src/**/*",
-        "tsconfig.json"
+        "dist/**/*"
     ],
     "scripts": {
-        "build": "tsc -b",
-        "install": "npm run build"
+        "build": "tsc --build",
+        "prepare": "tsc --build tsconfig.production.json"
     },
     "license": "ISC",
     "devDependencies": {

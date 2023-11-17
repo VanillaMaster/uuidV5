@@ -7,7 +7,7 @@ ESNext edition of uuidV5 from https://github.com/uuidjs/uuid
 
 ## installation
 ```
-npm install git+https://github.com/VanillaMaster/uuidV5.git
+npm install git+https://github.com/VanillaMaster/uuidv5.git
 ```
 
 ## example
