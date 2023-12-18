@@ -51,9 +51,19 @@ export const NameSpace_X500 = new Uint8Array([
 /**
  * uuid V5
  * 
+ * ```js
+ * const name = "example.com";
+ * const encoder = new TextEncoder();
+ * const buff = encoder.encode(name);
+ * const uuid = await v5(buff, NameSpace_URL);
+ * ```
  * [UUID RFC](https://www.rfc-editor.org/rfc/rfc4122)
+ * 
+ * @param { Uint8Array } value the value from which to generate a UUID
+ * @param { Uint8Array } namespace UUID of the namespace
+ * @returns { Promise<string> } resulting UUID
  */
-export default async function v5(value: Uint8Array, namespace: Uint8Array) {
+export default async function v5(value, namespace) {
     const bytes = new Uint8Array(value.byteLength + namespace.byteLength);
     bytes.set(namespace);
     bytes.set(value, namespace.length);

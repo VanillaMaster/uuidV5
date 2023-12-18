@@ -1,12 +1,16 @@
-type uuid = `${string}-${string}-${string}-${string}-${string}`;
-
-const byteToHex: string[] = [];
+/**@type { string[] }  */
+const byteToHex = [];
 
 for (let i = 0; i < 256; ++i) {
     byteToHex.push((i + 0x100).toString(16).slice(1));
 }
 
-export default function stringify(arr: Uint8Array, offset = 0): uuid {
+/**
+ * @param { Uint8Array } arr 
+ * @param { number } [offset] 
+ * @returns { string }
+ */
+export default function stringify(arr, offset = 0) {
     return (
         byteToHex[arr[offset + 0]] +
         byteToHex[arr[offset + 1]] +
@@ -28,5 +32,5 @@ export default function stringify(arr: Uint8Array, offset = 0): uuid {
         byteToHex[arr[offset + 13]] +
         byteToHex[arr[offset + 14]] +
         byteToHex[arr[offset + 15]]
-    ).toLowerCase() as uuid;
+    ).toLowerCase();
 }
