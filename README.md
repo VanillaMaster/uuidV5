@@ -1,4 +1,4 @@
-# uuidV5
+# @vanilla/uuidv5
 ESNext edition of uuidV5 from https://github.com/uuidjs/uuid
 
 ## requirements
