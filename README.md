@@ -12,7 +12,7 @@ npm install git+https://github.com/VanillaMaster/uuidv5.git
 
 ## example
 ```js
-import generateUUID, { NameSpace_URL } from "uuidv5";
+import generateUUID, { NameSpace_URL } from "@vanilla/uuidv5";
 
 const encoder = new TextEncoder();
 const data = encoder.encode("https://example.com/");
